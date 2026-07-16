@@ -192,3 +192,8 @@ nav.style.boxShadow="none";
 }
 
 });
+document.querySelectorAll('a[href="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault(); // Blocks the hash from appearing in the URL bar
+    });
+});
